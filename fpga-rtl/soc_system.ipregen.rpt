@@ -1,0 +1,416 @@
+IP Upgrade report for soc_system
+Tue Mar 14 15:53:57 2017
+Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Successfully Upgraded IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------+
+; IP Upgrade Summary                                                         ;
++------------------------------+---------------------------------------------+
+; IP Components Upgrade Status ; Passed - Tue Mar 14 15:53:57 2017           ;
+; Quartus Prime Version        ; 16.1.2 Build 203 01/18/2017 SJ Lite Edition ;
+; Revision Name                ; soc_system                                  ;
+; Top-level Entity Name        ; ghrd                                        ;
+; Family                       ; Cyclone V                                   ;
++------------------------------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Successfully Upgraded IP Components                                                                                                                                         ;
++-------------+------------------------------+---------+-------------------------------------+--------------------------------+-------------------------------------+---------+
+; Entity Name ; Component Name               ; Version ; Original Source File                ; Generation File Path           ; New Source File                     ; Message ;
++-------------+------------------------------+---------+-------------------------------------+--------------------------------+-------------------------------------+---------+
+; soc_system  ; Qsys                         ; 14.1    ; soc_system/synthesis/soc_system.qip ; soc_system.qsys                ; soc_system/synthesis/soc_system.qip ;         ;
+; hps_reset   ; In-System Sources and Probes ; 13.1    ; ip/altsource_probe/hps_reset.qip    ; ip/altsource_probe/hps_reset.v ; ip/altsource_probe/hps_reset.qip    ;         ;
++-------------+------------------------------+---------+-------------------------------------+--------------------------------+-------------------------------------+---------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "soc_system.qsys" to "soc_system.BAK.qsys"
+Info (11902): Backing up file "soc_system/synthesis/soc_system.v" to "soc_system.BAK.v"
+Info (11837): Started upgrading IP component Qsys with file "soc_system.qsys"
+Info: 2017.03.14.15:52:05 Info: Starting to upgrade the IP cores in the Qsys system
+Info: 2017.03.14.15:52:05 Info: Finished upgrading the ip cores
+Info: 2017.03.14.15:52:21 Info: Saving generation log to /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system
+Info: 2017.03.14.15:52:21 Info: Starting: Create simulation model
+Info: 2017.03.14.15:52:21 Info: Loading fpga-rtl
+Info: 2017.03.14.15:52:21 Info: Reading input file
+Info: 2017.03.14.15:52:21 Info: Adding clk_0 [clock_source 16.1]
+Info: 2017.03.14.15:52:21 Info: Parameterizing module clk_0
+Info: 2017.03.14.15:52:21 Info: Adding fpga_only_master [altera_jtag_avalon_master 16.1]
+Info: 2017.03.14.15:52:21 Info: Parameterizing module fpga_only_master
+Info: 2017.03.14.15:52:21 Info: Adding hps_0 [altera_hps 16.1]
+Info: 2017.03.14.15:52:21 Info: Parameterizing module hps_0
+Info: 2017.03.14.15:52:21 Info: Adding hps_only_master [altera_jtag_avalon_master 16.1]
+Info: 2017.03.14.15:52:21 Info: Parameterizing module hps_only_master
+Info: 2017.03.14.15:52:21 Info: Adding intr_capturer_0 [intr_capturer 100.99.98.97]
+Info: 2017.03.14.15:52:21 Info: Parameterizing module intr_capturer_0
+Info: 2017.03.14.15:52:21 Info: Adding jtag_uart [altera_avalon_jtag_uart 16.1]
+Info: 2017.03.14.15:52:21 Info: Parameterizing module jtag_uart
+Info: 2017.03.14.15:52:21 Info: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 16.1]
+Info: 2017.03.14.15:52:21 Info: Parameterizing module onchip_memory2_0
+Info: 2017.03.14.15:52:21 Info: Adding pio_led [altera_avalon_pio 16.1]
+Info: 2017.03.14.15:52:21 Info: Parameterizing module pio_led
+Info: 2017.03.14.15:52:21 Info: Adding sysid_qsys [altera_avalon_sysid_qsys 16.1]
+Info: 2017.03.14.15:52:21 Info: Parameterizing module sysid_qsys
+Info: 2017.03.14.15:52:21 Info: Building connections
+Info: 2017.03.14.15:52:21 Info: Parameterizing connections
+Info: 2017.03.14.15:52:21 Info: Validating
+Info: 2017.03.14.15:52:26 Info: Done reading input file
+Info: 2017.03.14.15:52:28 Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2017.03.14.15:52:28 Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2017.03.14.15:52:28 Warning: soc_system.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: 2017.03.14.15:52:28 Info: soc_system.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: 2017.03.14.15:52:28 Info: soc_system.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: 2017.03.14.15:52:28 Info: soc_system.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: 2017.03.14.15:52:29 Info: soc_system: Generating soc_system "soc_system" for SIM_VERILOG
+Info: 2017.03.14.15:52:33 Info: Interconnect is inserted between master hps_only_master.master and slave hps_0.f2h_axi_slave because the master is of type avalon and the slave is of type axi.
+Warning: 2017.03.14.15:52:34 Warning: hps_0.f2h_irq0: Cannot connect clock for irq_mapper.sender
+Warning: 2017.03.14.15:52:34 Warning: hps_0.f2h_irq0: Cannot connect reset for irq_mapper.sender
+Warning: 2017.03.14.15:52:34 Warning: hps_0.f2h_irq1: Cannot connect clock for irq_mapper_001.sender
+Warning: 2017.03.14.15:52:34 Warning: hps_0.f2h_irq1: Cannot connect reset for irq_mapper_001.sender
+Info: 2017.03.14.15:52:37 Info: fpga_only_master: "soc_system" instantiated altera_jtag_avalon_master "fpga_only_master"
+Info: 2017.03.14.15:52:37 Info: hps_0: "Running  for module: hps_0"
+Info: 2017.03.14.15:52:37 Info: hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2017.03.14.15:52:38 Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2017.03.14.15:52:38 Warning: hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: 2017.03.14.15:52:38 Info: hps_0: "soc_system" instantiated altera_hps "hps_0"
+Info: 2017.03.14.15:52:38 Info: intr_capturer_0: "soc_system" instantiated intr_capturer "intr_capturer_0"
+Info: 2017.03.14.15:52:38 Info: jtag_uart: Starting RTL generation for module 'soc_system_jtag_uart'
+Info: 2017.03.14.15:52:38 Info: jtag_uart:   Generation command is [exec /opt/altera/intelFPGA_lite/16.1/quartus/linux64/perl/bin/perl -I /opt/altera/intelFPGA_lite/16.1/quartus/linux64/perl/lib -I /opt/altera/intelFPGA_lite/16.1/quartus/sopc_builder/bin/europa -I /opt/altera/intelFPGA_lite/16.1/quartus/sopc_builder/bin/perl_lib -I /opt/altera/intelFPGA_lite/16.1/quartus/sopc_builder/bin -I /opt/altera/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/altera/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /opt/altera/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=soc_system_jtag_uart --dir=/tmp/alt7239_1704594302114292043.dir/0002_jtag_uart_gen/ --quartus_dir=/opt/altera/intelFPGA_lite/16.1/quartus --verilog --config=/tmp/alt7239_1704594302114292043.dir/0002_jtag_uart_gen//soc_system_jtag_uart_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt7239_1704594302114292043.dir/0002_jtag_uart_gen
+Info: 2017.03.14.15:52:39 Info: jtag_uart: Done RTL generation for module 'soc_system_jtag_uart'
+Info: 2017.03.14.15:52:39 Info: jtag_uart: "soc_system" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: 2017.03.14.15:52:39 Info: onchip_memory2_0: Starting RTL generation for module 'soc_system_onchip_memory2_0'
+Info: 2017.03.14.15:52:39 Info: onchip_memory2_0:   Generation command is [exec /opt/altera/intelFPGA_lite/16.1/quartus/linux64/perl/bin/perl -I /opt/altera/intelFPGA_lite/16.1/quartus/linux64/perl/lib -I /opt/altera/intelFPGA_lite/16.1/quartus/sopc_builder/bin/europa -I /opt/altera/intelFPGA_lite/16.1/quartus/sopc_builder/bin/perl_lib -I /opt/altera/intelFPGA_lite/16.1/quartus/sopc_builder/bin -I /opt/altera/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/altera/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /opt/altera/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=soc_system_onchip_memory2_0 --dir=/tmp/alt7239_1704594302114292043.dir/0003_onchip_memory2_0_gen/ --quartus_dir=/opt/altera/intelFPGA_lite/16.1/quartus --verilog --config=/tmp/alt7239_1704594302114292043.dir/0003_onchip_memory2_0_gen//soc_system_onchip_memory2_0_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt7239_1704594302114292043.dir/0003_onchip_memory2_0_gen
+Info: 2017.03.14.15:52:39 Info: onchip_memory2_0: Done RTL generation for module 'soc_system_onchip_memory2_0'
+Info: 2017.03.14.15:52:39 Info: onchip_memory2_0: "soc_system" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: 2017.03.14.15:52:39 Info: pio_led: Starting RTL generation for module 'soc_system_pio_led'
+Info: 2017.03.14.15:52:39 Info: pio_led:   Generation command is [exec /opt/altera/intelFPGA_lite/16.1/quartus/linux64/perl/bin/perl -I /opt/altera/intelFPGA_lite/16.1/quartus/linux64/perl/lib -I /opt/altera/intelFPGA_lite/16.1/quartus/sopc_builder/bin/europa -I /opt/altera/intelFPGA_lite/16.1/quartus/sopc_builder/bin/perl_lib -I /opt/altera/intelFPGA_lite/16.1/quartus/sopc_builder/bin -I /opt/altera/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/altera/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /opt/altera/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_pio_led --dir=/tmp/alt7239_1704594302114292043.dir/0004_pio_led_gen/ --quartus_dir=/opt/altera/intelFPGA_lite/16.1/quartus --verilog --config=/tmp/alt7239_1704594302114292043.dir/0004_pio_led_gen//soc_system_pio_led_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt7239_1704594302114292043.dir/0004_pio_led_gen
+Info: 2017.03.14.15:52:39 Info: pio_led: Done RTL generation for module 'soc_system_pio_led'
+Info: 2017.03.14.15:52:39 Info: pio_led: "soc_system" instantiated altera_avalon_pio "pio_led"
+Info: 2017.03.14.15:52:39 Info: sysid_qsys: "soc_system" instantiated altera_avalon_sysid_qsys "sysid_qsys"
+Info: 2017.03.14.15:52:39 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2017.03.14.15:52:39 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: 2017.03.14.15:52:39 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: 2017.03.14.15:52:39 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: 2017.03.14.15:52:40 Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: 2017.03.14.15:52:40 Info: mm_interconnect_0: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: 2017.03.14.15:52:40 Info: mm_interconnect_1: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: 2017.03.14.15:52:40 Info: irq_mapper: "soc_system" instantiated altera_irq_mapper "irq_mapper"
+Info: 2017.03.14.15:52:40 Info: irq_mapper_001: "soc_system" instantiated altera_irq_mapper "irq_mapper_001"
+Info: 2017.03.14.15:52:40 Info: rst_controller: "soc_system" instantiated altera_reset_controller "rst_controller"
+Info: 2017.03.14.15:52:40 Info: jtag_phy_embedded_in_jtag_master: "fpga_only_master" instantiated altera_jtag_dc_streaming "jtag_phy_embedded_in_jtag_master"
+Info: 2017.03.14.15:52:40 Info: timing_adt: "fpga_only_master" instantiated timing_adapter "timing_adt"
+Info: 2017.03.14.15:52:40 Info: fifo: "fpga_only_master" instantiated altera_avalon_sc_fifo "fifo"
+Info: 2017.03.14.15:52:40 Info: b2p: "fpga_only_master" instantiated altera_avalon_st_bytes_to_packets "b2p"
+Info: 2017.03.14.15:52:40 Info: p2b: "fpga_only_master" instantiated altera_avalon_st_packets_to_bytes "p2b"
+Info: 2017.03.14.15:52:40 Info: transacto: "fpga_only_master" instantiated altera_avalon_packets_to_master "transacto"
+Info: 2017.03.14.15:52:40 Info: b2p_adapter: "fpga_only_master" instantiated channel_adapter "b2p_adapter"
+Info: 2017.03.14.15:52:40 Info: p2b_adapter: "fpga_only_master" instantiated channel_adapter "p2b_adapter"
+Info: 2017.03.14.15:52:40 Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: 2017.03.14.15:52:40 Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: 2017.03.14.15:52:40 Info: fpga_only_master_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "fpga_only_master_master_translator"
+Info: 2017.03.14.15:52:40 Info: onchip_memory2_0_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "onchip_memory2_0_s1_translator"
+Info: 2017.03.14.15:52:40 Info: hps_0_h2f_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_0_h2f_axi_master_agent"
+Info: 2017.03.14.15:52:40 Info: fpga_only_master_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "fpga_only_master_master_agent"
+Info: 2017.03.14.15:52:40 Info: onchip_memory2_0_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "onchip_memory2_0_s1_agent"
+Info: 2017.03.14.15:52:40 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: 2017.03.14.15:52:40 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: 2017.03.14.15:52:40 Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: 2017.03.14.15:52:40 Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: 2017.03.14.15:52:40 Info: router_006: "mm_interconnect_0" instantiated altera_merlin_router "router_006"
+Info: 2017.03.14.15:52:40 Info: router_007: "mm_interconnect_0" instantiated altera_merlin_router "router_007"
+Info: 2017.03.14.15:52:40 Info: router_009: "mm_interconnect_0" instantiated altera_merlin_router "router_009"
+Info: 2017.03.14.15:52:40 Info: fpga_only_master_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "fpga_only_master_master_limiter"
+Info: 2017.03.14.15:52:40 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:40 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:40 Info: onchip_memory2_0_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "onchip_memory2_0_s1_burst_adapter"
+Info: 2017.03.14.15:52:40 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:40 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:40 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:40 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2017.03.14.15:52:40 Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: 2017.03.14.15:52:40 Info: cmd_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_003"
+Info: 2017.03.14.15:52:40 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2017.03.14.15:52:40 Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: 2017.03.14.15:52:40 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:40 Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: 2017.03.14.15:52:40 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:40 Info: cmd_mux_004: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_004"
+Info: 2017.03.14.15:52:40 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:40 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2017.03.14.15:52:40 Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: 2017.03.14.15:52:40 Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: 2017.03.14.15:52:40 Info: rsp_demux_004: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_004"
+Info: 2017.03.14.15:52:40 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2017.03.14.15:52:40 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:40 Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: 2017.03.14.15:52:40 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:40 Info: rsp_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_003"
+Info: 2017.03.14.15:52:40 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:40 Info: fpga_only_master_master_to_onchip_memory2_0_s1_cmd_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "fpga_only_master_master_to_onchip_memory2_0_s1_cmd_width_adapter"
+Info: 2017.03.14.15:52:40 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:40 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:40 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: 2017.03.14.15:52:40 Info: avalon_st_adapter_001: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: 2017.03.14.15:52:40 Info: hps_0_f2h_axi_slave_agent: "mm_interconnect_1" instantiated altera_merlin_axi_slave_ni "hps_0_f2h_axi_slave_agent"
+Info: 2017.03.14.15:52:40 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:40 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:40 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:40 Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: 2017.03.14.15:52:40 Info: router_001: "mm_interconnect_1" instantiated altera_merlin_router "router_001"
+Info: 2017.03.14.15:52:40 Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2017.03.14.15:52:40 Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2017.03.14.15:52:40 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:40 Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2017.03.14.15:52:40 Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2017.03.14.15:52:40 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:41 Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: 2017.03.14.15:52:41 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:41 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:41 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:41 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:41 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:41 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:41 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation/submodules
+Info: 2017.03.14.15:52:41 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: 2017.03.14.15:52:41 Info: error_adapter_0: "avalon_st_adapter_001" instantiated error_adapter "error_adapter_0"
+Info: 2017.03.14.15:52:41 Info: soc_system: Done "soc_system" with 64 modules, 104 files
+Info: 2017.03.14.15:52:41 Info: qsys-generate succeeded.
+Info: 2017.03.14.15:52:41 Info: Finished: Create simulation model
+Info: 2017.03.14.15:52:41 Info: Starting: Create Modelsim Project.
+Info: 2017.03.14.15:52:41 Info: sim-script-gen --spd=/home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/soc_system.spd --output-directory=/home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation
+Info: 2017.03.14.15:52:41 Info: Doing: ip-make-simscript --spd=/home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/soc_system.spd --output-directory=/home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation
+Info: 2017.03.14.15:52:41 Info: Generating the following file(s) for MODELSIM simulator in /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation
+Info: 2017.03.14.15:52:41 Info:     mentor
+Info: 2017.03.14.15:52:41 Info: Generating the following file(s) for VCS simulator in /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation
+Info: 2017.03.14.15:52:41 Info:     synopsys/vcs
+Info: 2017.03.14.15:52:41 Info: Generating the following file(s) for VCSMX simulator in /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation
+Info: 2017.03.14.15:52:41 Info:     synopsys/vcsmx
+Info: 2017.03.14.15:52:41 Info:     synopsys/vcsmx
+Info: 2017.03.14.15:52:41 Info: Generating the following file(s) for NCSIM simulator in /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation
+Info: 2017.03.14.15:52:41 Info:     cadence
+Info: 2017.03.14.15:52:41 Info:     cadence
+Info: 2017.03.14.15:52:41 Info:     cadence
+Info: 2017.03.14.15:52:41 Info:     58 .cds.lib files in cadence/cds_libs
+Info: 2017.03.14.15:52:41 Info: Generating the following file(s) for RIVIERA simulator in /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation
+Info: 2017.03.14.15:52:41 Info:     aldec
+Info: 2017.03.14.15:52:41 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/simulation
+Info: 2017.03.14.15:52:41 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: 2017.03.14.15:52:41 Info: Finished: Create Modelsim Project.
+Info: 2017.03.14.15:52:41 Info: Starting: Create block symbol file (.bsf)
+Info: 2017.03.14.15:52:41 Info: Loading fpga-rtl
+Info: 2017.03.14.15:52:41 Info: Reading input file
+Info: 2017.03.14.15:52:41 Info: Adding clk_0 [clock_source 16.1]
+Info: 2017.03.14.15:52:41 Info: Parameterizing module clk_0
+Info: 2017.03.14.15:52:41 Info: Adding fpga_only_master [altera_jtag_avalon_master 16.1]
+Info: 2017.03.14.15:52:41 Info: Parameterizing module fpga_only_master
+Info: 2017.03.14.15:52:41 Info: Adding hps_0 [altera_hps 16.1]
+Info: 2017.03.14.15:52:41 Info: Parameterizing module hps_0
+Info: 2017.03.14.15:52:41 Info: Adding hps_only_master [altera_jtag_avalon_master 16.1]
+Info: 2017.03.14.15:52:41 Info: Parameterizing module hps_only_master
+Info: 2017.03.14.15:52:41 Info: Adding intr_capturer_0 [intr_capturer 100.99.98.97]
+Info: 2017.03.14.15:52:41 Info: Parameterizing module intr_capturer_0
+Info: 2017.03.14.15:52:41 Info: Adding jtag_uart [altera_avalon_jtag_uart 16.1]
+Info: 2017.03.14.15:52:41 Info: Parameterizing module jtag_uart
+Info: 2017.03.14.15:52:41 Info: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 16.1]
+Info: 2017.03.14.15:52:41 Info: Parameterizing module onchip_memory2_0
+Info: 2017.03.14.15:52:41 Info: Adding pio_led [altera_avalon_pio 16.1]
+Info: 2017.03.14.15:52:41 Info: Parameterizing module pio_led
+Info: 2017.03.14.15:52:41 Info: Adding sysid_qsys [altera_avalon_sysid_qsys 16.1]
+Info: 2017.03.14.15:52:41 Info: Parameterizing module sysid_qsys
+Info: 2017.03.14.15:52:41 Info: Building connections
+Info: 2017.03.14.15:52:41 Info: Parameterizing connections
+Info: 2017.03.14.15:52:41 Info: Validating
+Info: 2017.03.14.15:52:46 Info: Done reading input file
+Info: 2017.03.14.15:52:48 Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2017.03.14.15:52:48 Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2017.03.14.15:52:48 Warning: soc_system.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: 2017.03.14.15:52:48 Info: soc_system.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: 2017.03.14.15:52:48 Info: soc_system.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: 2017.03.14.15:52:48 Info: soc_system.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: 2017.03.14.15:52:49 Info: qsys-generate succeeded.
+Info: 2017.03.14.15:52:49 Info: Finished: Create block symbol file (.bsf)
+Info: 2017.03.14.15:52:49 Info:
+Info: 2017.03.14.15:52:49 Info: Starting: Create HDL design files for synthesis
+Info: 2017.03.14.15:52:49 Info: Loading fpga-rtl
+Info: 2017.03.14.15:52:49 Info: Reading input file
+Info: 2017.03.14.15:52:49 Info: Adding clk_0 [clock_source 16.1]
+Info: 2017.03.14.15:52:49 Info: Parameterizing module clk_0
+Info: 2017.03.14.15:52:49 Info: Adding fpga_only_master [altera_jtag_avalon_master 16.1]
+Info: 2017.03.14.15:52:49 Info: Parameterizing module fpga_only_master
+Info: 2017.03.14.15:52:49 Info: Adding hps_0 [altera_hps 16.1]
+Info: 2017.03.14.15:52:49 Info: Parameterizing module hps_0
+Info: 2017.03.14.15:52:49 Info: Adding hps_only_master [altera_jtag_avalon_master 16.1]
+Info: 2017.03.14.15:52:49 Info: Parameterizing module hps_only_master
+Info: 2017.03.14.15:52:49 Info: Adding intr_capturer_0 [intr_capturer 100.99.98.97]
+Info: 2017.03.14.15:52:49 Info: Parameterizing module intr_capturer_0
+Info: 2017.03.14.15:52:49 Info: Adding jtag_uart [altera_avalon_jtag_uart 16.1]
+Info: 2017.03.14.15:52:49 Info: Parameterizing module jtag_uart
+Info: 2017.03.14.15:52:49 Info: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 16.1]
+Info: 2017.03.14.15:52:49 Info: Parameterizing module onchip_memory2_0
+Info: 2017.03.14.15:52:49 Info: Adding pio_led [altera_avalon_pio 16.1]
+Info: 2017.03.14.15:52:49 Info: Parameterizing module pio_led
+Info: 2017.03.14.15:52:49 Info: Adding sysid_qsys [altera_avalon_sysid_qsys 16.1]
+Info: 2017.03.14.15:52:49 Info: Parameterizing module sysid_qsys
+Info: 2017.03.14.15:52:49 Info: Building connections
+Info: 2017.03.14.15:52:49 Info: Parameterizing connections
+Info: 2017.03.14.15:52:49 Info: Validating
+Info: 2017.03.14.15:52:54 Info: Done reading input file
+Info: 2017.03.14.15:52:55 Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2017.03.14.15:52:55 Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2017.03.14.15:52:55 Warning: soc_system.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: 2017.03.14.15:52:55 Info: soc_system.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: 2017.03.14.15:52:55 Info: soc_system.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: 2017.03.14.15:52:55 Info: soc_system.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: 2017.03.14.15:53:11 Info: soc_system: Generating soc_system "soc_system" for QUARTUS_SYNTH
+Info: 2017.03.14.15:53:14 Info: Interconnect is inserted between master hps_only_master.master and slave hps_0.f2h_axi_slave because the master is of type avalon and the slave is of type axi.
+Warning: 2017.03.14.15:53:14 Warning: hps_0.f2h_irq0: Cannot connect clock for irq_mapper.sender
+Warning: 2017.03.14.15:53:14 Warning: hps_0.f2h_irq0: Cannot connect reset for irq_mapper.sender
+Warning: 2017.03.14.15:53:14 Warning: hps_0.f2h_irq1: Cannot connect clock for irq_mapper_001.sender
+Warning: 2017.03.14.15:53:14 Warning: hps_0.f2h_irq1: Cannot connect reset for irq_mapper_001.sender
+Info: 2017.03.14.15:53:16 Info: fpga_only_master: "soc_system" instantiated altera_jtag_avalon_master "fpga_only_master"
+Info: 2017.03.14.15:53:16 Info: hps_0: "Running  for module: hps_0"
+Info: 2017.03.14.15:53:17 Info: hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2017.03.14.15:53:17 Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2017.03.14.15:53:17 Warning: hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: 2017.03.14.15:53:18 Info: hps_0: "soc_system" instantiated altera_hps "hps_0"
+Info: 2017.03.14.15:53:18 Info: intr_capturer_0: "soc_system" instantiated intr_capturer "intr_capturer_0"
+Info: 2017.03.14.15:53:18 Info: jtag_uart: Starting RTL generation for module 'soc_system_jtag_uart'
+Info: 2017.03.14.15:53:18 Info: jtag_uart:   Generation command is [exec /opt/altera/intelFPGA_lite/16.1/quartus/linux64/perl/bin/perl -I /opt/altera/intelFPGA_lite/16.1/quartus/linux64/perl/lib -I /opt/altera/intelFPGA_lite/16.1/quartus/sopc_builder/bin/europa -I /opt/altera/intelFPGA_lite/16.1/quartus/sopc_builder/bin/perl_lib -I /opt/altera/intelFPGA_lite/16.1/quartus/sopc_builder/bin -I /opt/altera/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/altera/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /opt/altera/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=soc_system_jtag_uart --dir=/tmp/alt7239_1704594302114292043.dir/0059_jtag_uart_gen/ --quartus_dir=/opt/altera/intelFPGA_lite/16.1/quartus --verilog --config=/tmp/alt7239_1704594302114292043.dir/0059_jtag_uart_gen/
+Info: 2017.03.14.15:53:18 Info: jtag_uart: Done RTL generation for module 'soc_system_jtag_uart'
+Info: 2017.03.14.15:53:18 Info: jtag_uart: "soc_system" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: 2017.03.14.15:53:18 Info: onchip_memory2_0: Starting RTL generation for module 'soc_system_onchip_memory2_0'
+Info: 2017.03.14.15:53:18 Info: onchip_memory2_0:   Generation command is [exec /opt/altera/intelFPGA_lite/16.1/quartus/linux64/perl/bin/perl -I /opt/altera/intelFPGA_lite/16.1/quartus/linux64/perl/lib -I /opt/altera/intelFPGA_lite/16.1/quartus/sopc_builder/bin/europa -I /opt/altera/intelFPGA_lite/16.1/quartus/sopc_builder/bin/perl_lib -I /opt/altera/intelFPGA_lite/16.1/quartus/sopc_builder/bin -I /opt/altera/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/altera/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /opt/altera/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=soc_system_onchip_memory2_0 --dir=/tmp/alt7239_1704594302114292043.dir/0060_onchip_memory2_0_gen/ --quartus_dir=/opt/altera/intelFPGA_lite/16.1/quartus --verilog --config=/tmp/alt7239_1704594302114292043.dir/0060_onchip_memory2_0_gen/
+Info: 2017.03.14.15:53:18 Info: onchip_memory2_0: Done RTL generation for module 'soc_system_onchip_memory2_0'
+Info: 2017.03.14.15:53:18 Info: onchip_memory2_0: "soc_system" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: 2017.03.14.15:53:18 Info: pio_led: Starting RTL generation for module 'soc_system_pio_led'
+Info: 2017.03.14.15:53:18 Info: pio_led:   Generation command is [exec /opt/altera/intelFPGA_lite/16.1/quartus/linux64/perl/bin/perl -I /opt/altera/intelFPGA_lite/16.1/quartus/linux64/perl/lib -I /opt/altera/intelFPGA_lite/16.1/quartus/sopc_builder/bin/europa -I /opt/altera/intelFPGA_lite/16.1/quartus/sopc_builder/bin/perl_lib -I /opt/altera/intelFPGA_lite/16.1/quartus/sopc_builder/bin -I /opt/altera/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I /opt/altera/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /opt/altera/intelFPGA_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=soc_system_pio_led --dir=/tmp/alt7239_1704594302114292043.dir/0061_pio_led_gen/ --quartus_dir=/opt/altera/intelFPGA_lite/16.1/quartus --verilog --config=/tmp/alt7239_1704594302114292043.dir/0061_pio_led_gen/
+Info: 2017.03.14.15:53:18 Info: pio_led: Done RTL generation for module 'soc_system_pio_led'
+Info: 2017.03.14.15:53:18 Info: pio_led: "soc_system" instantiated altera_avalon_pio "pio_led"
+Info: 2017.03.14.15:53:18 Info: sysid_qsys: "soc_system" instantiated altera_avalon_sysid_qsys "sysid_qsys"
+Info: 2017.03.14.15:53:18 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2017.03.14.15:53:19 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: 2017.03.14.15:53:19 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: 2017.03.14.15:53:19 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: 2017.03.14.15:53:19 Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: 2017.03.14.15:53:19 Info: mm_interconnect_0: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: 2017.03.14.15:53:19 Info: mm_interconnect_1: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: 2017.03.14.15:53:19 Info: irq_mapper: "soc_system" instantiated altera_irq_mapper "irq_mapper"
+Info: 2017.03.14.15:53:19 Info: irq_mapper_001: "soc_system" instantiated altera_irq_mapper "irq_mapper_001"
+Info: 2017.03.14.15:53:19 Info: rst_controller: "soc_system" instantiated altera_reset_controller "rst_controller"
+Info: 2017.03.14.15:53:19 Info: jtag_phy_embedded_in_jtag_master: "fpga_only_master" instantiated altera_jtag_dc_streaming "jtag_phy_embedded_in_jtag_master"
+Info: 2017.03.14.15:53:19 Info: timing_adt: "fpga_only_master" instantiated timing_adapter "timing_adt"
+Info: 2017.03.14.15:53:19 Info: fifo: "fpga_only_master" instantiated altera_avalon_sc_fifo "fifo"
+Info: 2017.03.14.15:53:19 Info: b2p: "fpga_only_master" instantiated altera_avalon_st_bytes_to_packets "b2p"
+Info: 2017.03.14.15:53:19 Info: p2b: "fpga_only_master" instantiated altera_avalon_st_packets_to_bytes "p2b"
+Info: 2017.03.14.15:53:19 Info: transacto: "fpga_only_master" instantiated altera_avalon_packets_to_master "transacto"
+Info: 2017.03.14.15:53:19 Info: b2p_adapter: "fpga_only_master" instantiated channel_adapter "b2p_adapter"
+Info: 2017.03.14.15:53:19 Info: p2b_adapter: "fpga_only_master" instantiated channel_adapter "p2b_adapter"
+Info: 2017.03.14.15:53:19 Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: 2017.03.14.15:53:19 Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: 2017.03.14.15:53:19 Info: fpga_only_master_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "fpga_only_master_master_translator"
+Info: 2017.03.14.15:53:19 Info: onchip_memory2_0_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "onchip_memory2_0_s1_translator"
+Info: 2017.03.14.15:53:19 Info: hps_0_h2f_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_0_h2f_axi_master_agent"
+Info: 2017.03.14.15:53:19 Info: fpga_only_master_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "fpga_only_master_master_agent"
+Info: 2017.03.14.15:53:19 Info: onchip_memory2_0_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "onchip_memory2_0_s1_agent"
+Info: 2017.03.14.15:53:19 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: 2017.03.14.15:53:19 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: 2017.03.14.15:53:19 Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: 2017.03.14.15:53:19 Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: 2017.03.14.15:53:19 Info: router_006: "mm_interconnect_0" instantiated altera_merlin_router "router_006"
+Info: 2017.03.14.15:53:19 Info: router_007: "mm_interconnect_0" instantiated altera_merlin_router "router_007"
+Info: 2017.03.14.15:53:19 Info: router_009: "mm_interconnect_0" instantiated altera_merlin_router "router_009"
+Info: 2017.03.14.15:53:19 Info: fpga_only_master_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "fpga_only_master_master_limiter"
+Info: 2017.03.14.15:53:19 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/synthesis/submodules
+Info: 2017.03.14.15:53:19 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/synthesis/submodules
+Info: 2017.03.14.15:53:19 Info: onchip_memory2_0_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "onchip_memory2_0_s1_burst_adapter"
+Info: 2017.03.14.15:53:19 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/synthesis/submodules
+Info: 2017.03.14.15:53:19 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/synthesis/submodules
+Info: 2017.03.14.15:53:19 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/synthesis/submodules
+Info: 2017.03.14.15:53:19 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2017.03.14.15:53:19 Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: 2017.03.14.15:53:19 Info: cmd_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_003"
+Info: 2017.03.14.15:53:19 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2017.03.14.15:53:19 Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: 2017.03.14.15:53:19 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/synthesis/submodules
+Info: 2017.03.14.15:53:19 Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: 2017.03.14.15:53:19 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/synthesis/submodules
+Info: 2017.03.14.15:53:19 Info: cmd_mux_004: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_004"
+Info: 2017.03.14.15:53:19 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/synthesis/submodules
+Info: 2017.03.14.15:53:19 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2017.03.14.15:53:19 Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: 2017.03.14.15:53:19 Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: 2017.03.14.15:53:19 Info: rsp_demux_004: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_004"
+Info: 2017.03.14.15:53:19 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2017.03.14.15:53:19 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/synthesis/submodules
+Info: 2017.03.14.15:53:19 Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: 2017.03.14.15:53:19 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/synthesis/submodules
+Info: 2017.03.14.15:53:19 Info: rsp_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_003"
+Info: 2017.03.14.15:53:19 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/synthesis/submodules
+Info: 2017.03.14.15:53:19 Info: fpga_only_master_master_to_onchip_memory2_0_s1_cmd_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "fpga_only_master_master_to_onchip_memory2_0_s1_cmd_width_adapter"
+Info: 2017.03.14.15:53:19 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/synthesis/submodules
+Info: 2017.03.14.15:53:19 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/synthesis/submodules
+Info: 2017.03.14.15:53:19 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: 2017.03.14.15:53:19 Info: avalon_st_adapter_001: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: 2017.03.14.15:53:19 Info: hps_0_f2h_axi_slave_agent: "mm_interconnect_1" instantiated altera_merlin_axi_slave_ni "hps_0_f2h_axi_slave_agent"
+Info: 2017.03.14.15:53:19 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/synthesis/submodules
+Info: 2017.03.14.15:53:19 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/synthesis/submodules
+Info: 2017.03.14.15:53:19 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/synthesis/submodules
+Info: 2017.03.14.15:53:19 Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: 2017.03.14.15:53:19 Info: router_001: "mm_interconnect_1" instantiated altera_merlin_router "router_001"
+Info: 2017.03.14.15:53:19 Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2017.03.14.15:53:19 Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2017.03.14.15:53:19 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/synthesis/submodules
+Info: 2017.03.14.15:53:19 Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2017.03.14.15:53:19 Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2017.03.14.15:53:19 Info: Reusing file /home/smart-t/workspace/quartus/my_first_hps-fpga/fpga-rtl/soc_system/synthesis/submodules
+Info: 2017.03.14.15:53:45 Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: 2017.03.14.15:53:45 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: 2017.03.14.15:53:45 Info: error_adapter_0: "avalon_st_adapter_001" instantiated error_adapter "error_adapter_0"
+Info: 2017.03.14.15:53:45 Info: soc_system: Done "soc_system" with 64 modules, 130 files
+Info: 2017.03.14.15:53:45 Info: qsys-generate succeeded.
+Info: 2017.03.14.15:53:45 Info: Finished: Create HDL design files for synthesis
+Info (11902): Backing up file "ip/altsource_probe/hps_reset.v" to "ip/altsource_probe/hps_reset.BAK.v"
+Info (11837): Started upgrading IP component In-System Sources and Probes with file "ip/altsource_probe/hps_reset.v"
+Info (11131): Completed upgrading IP component Qsys with file "soc_system.qsys"
+Info (11131): Completed upgrading IP component In-System Sources and Probes with file "ip/altsource_probe/hps_reset.v"
+Info (23030): Evaluation of Tcl script /opt/altera/intelFPGA_lite/16.1/quartus/common/tcl/internal/ip_regen/ip_regen.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 1074 megabytes
+    Info: Processing ended: Tue Mar 14 15:54:03 2017
+    Info: Elapsed time: 00:02:24
+    Info: Total CPU time (on all processors): 00:04:49
+
+
